@@ -564,3 +564,5 @@ Aurora Deemed-to-be-University
 <!-- Seed data details -->
 
 <!-- Postman instructions -->
+
+<!-- SQLite CLI tips -->
