@@ -84,3 +84,8 @@ POST {{baseUrl}}/login
 Content-Type: application/json
 
 {}
+### 12. Edge Case: Empty Body on Register
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{}
