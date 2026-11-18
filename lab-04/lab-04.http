@@ -248,3 +248,6 @@ Content-Type: application/json
   "username": "israr_hussain",
   "password": "wrongPasswordConstantTimeCheck"
 }
+### Test 36: Cloud Verification - HTTP Status Header Check
+GET {{renderUrl}}/
+Accept: application/json
