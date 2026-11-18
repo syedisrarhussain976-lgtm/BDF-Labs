@@ -111,3 +111,5 @@ GET {{baseUrl}}/unknown-api-route/
 ### Test Case 23: Non-numeric limit
 
 ### Test Case 24: Float offset
+
+### Test Case 25: SQL Injection Attempt in search_q
