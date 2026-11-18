@@ -167,3 +167,5 @@ app.use((request, response) => {
 initializeDBAndServer();
 
 module.exports = app;
+
+// [Module 1]: Import core Node.js runtime and HTTP engine modules
