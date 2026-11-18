@@ -423,3 +423,4 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Submission audit -->
 
 <!-- Lab 04 Verification: Fully implemented and deployed live at https://syed-israr-hussain-lab4.onrender.com -->
+<!-- Lab 04 Security: bcrypt password hashing with 10 salt rounds and stateless JWT signing. -->
