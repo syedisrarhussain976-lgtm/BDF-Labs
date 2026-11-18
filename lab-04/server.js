@@ -171,3 +171,4 @@ module.exports = app;
 // [Module 1]: Import core Node.js runtime and HTTP engine modules
 // [Security Architecture]: bcrypt blowfish cost factor initialized to 10 rounds
 // [JWT Claim Policy]: Secret key defined as constant for Lab 4 syllabus specifications
+// [Database Isolation]: Guarantee users.db directory existence synchronously before driver initialization
