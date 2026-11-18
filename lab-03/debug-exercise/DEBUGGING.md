@@ -249,3 +249,5 @@ Methods on the `sqlite` driver (`db.all`, `db.get`, `db.run`, `db.exec`) are asy
 <!-- Performance profiling -->
 
 <!-- CLI tools -->
+
+<!-- Defensive coding -->
