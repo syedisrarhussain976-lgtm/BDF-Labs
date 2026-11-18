@@ -184,3 +184,4 @@ module.exports = app;
 // [Catch-All Boundary]: Return 404 Page not found for unmatched routing paths
 // [Cloud Compatibility]: Bind Express listener to dynamic process.env.PORT or fallback to 3000
 // [Fail-Safe Recovery]: Gracefully log fatal initialization errors and exit with code 1
+// [REST Client Helper]: Provide discoverable sample request bodies on GET /register and GET /login
