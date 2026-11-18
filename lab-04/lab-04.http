@@ -146,3 +146,12 @@ Content-Type: application/json
   "name": "Empty Pass",
   "password": ""
 }
+### Test 20: Edge Case - Registration with Empty Username
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "",
+  "name": "Empty Username",
+  "password": "validPassword123"
+}
