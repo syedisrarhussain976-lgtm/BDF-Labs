@@ -95,3 +95,11 @@ Accept: application/json
 ### 14. Production Render: GET /login Helper
 GET {{renderUrl}}/login
 Accept: application/json
+### 15. Production Render: Login Verification
+POST {{renderUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "israr_cloud",
+  "password": "cloudPassword123"
+}
