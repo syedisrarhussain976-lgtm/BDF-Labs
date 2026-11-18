@@ -111,13 +111,20 @@ BDF-Labs/
 │   └── screenshots/                    # 16 verified execution screenshots
 │
 ├── lab-04/                             # Lab 04: Registration, Login & JWT Auth
+│   ├── .gitignore
+│   ├── .node-version
+│   ├── .env.example
 │   ├── app.http
+│   ├── lab-04.http                     # Comprehensive REST Client suite (Local & Render)
 │   ├── package.json
-│   ├── server.js
-│   ├── README.md
+│   ├── package-lock.json
+│   ├── server.js                       # Express, SQLite, bcrypt & JWT implementation
+│   ├── README.md                       # Comprehensive Lab 4 technical documentation
 │   ├── database/
 │   │   └── users.db                    # User table with salted password hashes
-│   └── screenshots/
+│   ├── postman/
+│   │   └── Lab4.postman_collection.json # Automated 9-scenario Postman test collection
+│   └── screenshots/                    # 10 verified execution & evidence screenshots
 │
 ├── lab-05/                             # Lab 05: Auth Middleware & Protected Routes
 │   ├── app.http
@@ -205,7 +212,7 @@ BDF-Labs/
 | **01** | Introduction to Node.js & HTTP Server | Node.js, Express | Dynamic HTTP routing, plain text, formatted date JSON, HTML responses | [Lab 01 README](lab-01/README.md) | **Completed** |
 | **02** | SQLite Database & CRUD Routes | Express, SQLite, sqlite3 | Complete CRUD REST operations on `book` table, parameterized queries | [Lab 02 README](lab-02/README.md) | **Completed** |
 | **03** | REST API, Query Parameters, Validation, and Debugging | Express, SQLite, sqlite3, Postman | Dynamic SQL query parameters (`search_q`, `order_by`, `order`, pagination `limit`/`offset`, `min_price`/`max_price`), whitelisting, payload validation, 4-bug debugging suite, 21 Postman tests | [Lab 03 README](lab-03/README.md) · [🔗 Live Server](https://syed-israr-hussain-lab3.onrender.com) | **Completed** |
-| **04** | User Registration, Login & JWT | Express, bcrypt, JWT, SQLite | Salted password hashing (salt 10), duplicate user check, JWT token issuance | [Lab 04 README](lab-04/README.md) | **Completed** |
+| **04** | User Registration, Login & JWT | Express, bcrypt, JWT, SQLite | Salted password hashing (salt 10), duplicate user check, JWT token issuance | [Lab 04 README](lab-04/README.md) · [🔗 Live Server](https://syed-israr-hussain-lab4.onrender.com) | **Completed** |
 | **05** | Auth Middleware & Protected Routes | Express, JWT, SQLite | Bearer token authorization middleware, 401 Unauthorized handling, protected CRUD | [Lab 05 README](lab-05/README.md) | **Completed** |
 | **06** | Relational Schemas & SQL Joins | Express, SQLite (FKs) | Author-book relational schema, `INNER JOIN`, `LEFT JOIN`, `GROUP BY` aggregations | [Lab 06 README](lab-06/README.md) | **Completed** |
 | **07** | Validation, Error Handling & Logging | Express Middleware | Input validation, 400 Bad Request handling, 4-argument centralized error boundary | [Lab 07 README](lab-07/README.md) | **Completed** |
@@ -346,7 +353,7 @@ All screenshots referenced in this documentation exist as verified assets within
 |:--------|:------------|:------------|
 | ![SQLite Database View](lab-02/screenshots/sqlite_database_view.svg) | **Lab 02:** SQLite Database Table Grid | `lab-02/screenshots/sqlite_database_view.svg` |
 | ![GET All Books](lab-02/screenshots/get_all_books.svg) | **Lab 02:** REST Client GET /books/ | `lab-02/screenshots/get_all_books.svg` |
-| ![JWT Auth](lab-04/screenshots/post_login_success.svg) | **Lab 04:** Successful JWT Issuance | `lab-04/screenshots/post_login_success.svg` |
+| ![JWT Auth](lab-04/screenshots/04-login-user-success-jwt.png) | **Lab 04:** Successful JWT Issuance | `lab-04/screenshots/04-login-user-success-jwt.png` |
 | ![Health Probe](lab-10/screenshots/health_check_output.svg) | **Lab 10:** Production Health Telemetry | `lab-10/screenshots/health_check_output.svg` |
 
 ---
