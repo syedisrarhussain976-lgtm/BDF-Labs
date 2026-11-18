@@ -392,3 +392,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 - **Joel Prashanth D** — Faculty, Backend Development Fundamentals, for curriculum guidance, assignment specifications, and technical standards.
 - **Department of Computer Science and Engineering**, Aurora Higher Education Institution.
 - Node.js, Express.js, and SQLite open-source developer communities.
+
+<!-- Render troubleshooting -->
