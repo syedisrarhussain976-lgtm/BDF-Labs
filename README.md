@@ -426,3 +426,4 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Lab 04 Security: bcrypt password hashing with 10 salt rounds and stateless JWT signing. -->
 <!-- Lab 04 Test Suite: Automated 9-scenario Postman collection and REST Client scripts. -->
 <!-- Student Attribution: All laboratory assignments authored by SYED ISRAR HUSSAIN (252U1R1235). -->
+<!-- Academic Compliance: Repository maintained by SYED ISRAR HUSSAIN (252U1R1235), Aurora University. -->
