@@ -240,3 +240,11 @@ Accept: application/json
 ### Test 34: Health Telemetry Inspection
 GET {{baseUrl}}/
 User-Agent: VSCode-RestClient-Student-SyedIsrarHussain
+### Test 35: Timing Attack Verification - Constant-time check
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "password": "wrongPasswordConstantTimeCheck"
+}
