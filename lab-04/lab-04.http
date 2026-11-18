@@ -234,3 +234,6 @@ POST {{renderUrl}}/register
 Content-Type: application/json
 
 { malformed json
+### Test 33: Verification - Root Endpoint Header Validation
+HEAD {{baseUrl}}/
+Accept: application/json
