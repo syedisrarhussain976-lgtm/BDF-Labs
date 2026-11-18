@@ -10,7 +10,8 @@
     "test": "node ../scratch/run_all_tests.js",
     "lint": "node -e \"console.log('Linting complete: No syntax errors found.')\"",
     "check:env": "node -e \"console.log('Node.js Version:', process.version); console.log('Architecture:', process.arch);\"",
-    "db:count": "node -e \"const {open}=require('sqlite'),sqlite3=require('sqlite3');(async()=>{const db=await open({filename:'database/users.db',driver:sqlite3.Database});const c=await db.get('SELECT COUNT(*) as total FROM user;');console.log('Total Registered Users:', c.total);})()\"""""
+    "db:count": "node -e \"const {open}=require('sqlite'),sqlite3=require('sqlite3');(async()=>{const db=await open({filename:'database/users.db',driver:sqlite3.Database});const c=await db.get('SELECT COUNT(*) as total FROM user;');console.log('Total Registered Users:', c.total);})()\"",
+    "db:schema": "node -e \"const {open}=require('sqlite'),sqlite3=require('sqlite3');(async()=>{const db=await open({filename:'database/users.db',driver:sqlite3.Database});console.log(await db.all('PRAGMA table_info(user);'));})()\""""""
   },
   "engines": {
     "node": "20.x"
