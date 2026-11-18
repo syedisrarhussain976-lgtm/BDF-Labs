@@ -1,0 +1,18 @@
+### Lab 01: Core HTTP Server REST Client Requests
+### Tested with VS Code REST Client extension
+
+### 1. Root Welcome Endpoint
+GET http://localhost:3000/
+Accept: text/plain
+
+### 2. Current Date and Time Endpoint
+GET http://localhost:3000/date
+Accept: application/json
+
+### 3. Dynamic HTML Page Endpoint
+GET http://localhost:3000/page
+Accept: text/html
+
+### 4. System and Course Information API
+GET http://localhost:3000/api/info
+Accept: application/json
