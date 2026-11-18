@@ -237,3 +237,5 @@ Methods on the `sqlite` driver (`db.all`, `db.get`, `db.run`, `db.exec`) are asy
 <!-- Bug 1 root cause -->
 
 <!-- Bug 2 module resolution -->
+
+<!-- Bug 3 sqlite ddl -->
