@@ -566,3 +566,5 @@ Through **Lab 4**, I achieved the following learning outcomes:
 **Section:** `CSE-2E`  
 **Department of Computer Science & Engineering**  
 **Aurora Deemed-to-be-University**
+
+<!-- Architectural Note: Salt rounds = 10 enforces 1,024 Blowfish iterations preventing GPU-accelerated hash cracking. -->
