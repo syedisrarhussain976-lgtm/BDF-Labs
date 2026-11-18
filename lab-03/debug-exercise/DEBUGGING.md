@@ -243,3 +243,5 @@ Methods on the `sqlite` driver (`db.all`, `db.get`, `db.run`, `db.exec`) are asy
 <!-- Bug 4 event loop -->
 
 <!-- Debugging best practices -->
+
+<!-- Error codes reference -->
