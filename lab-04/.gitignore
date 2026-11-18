@@ -4,3 +4,7 @@ database/*.db-journal
 database/*.db-wal
 database/*.db-shm
 .DS_Store
+
+# Local test runner output logs
+test-output.log
+*.tmp
