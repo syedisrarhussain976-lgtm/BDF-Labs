@@ -1,0 +1,36 @@
+### Lab 05: Authentication Middleware & Protected Routes
+### Tested with VS Code REST Client
+
+### 1. Authenticate and obtain JWT
+# @name login
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "israr_lead",
+  "password": "secretPass123"
+}
+
+### 2. Access Protected /profile/ Without Token (Expect 401: Invalid JWT Token)
+GET http://localhost:3000/profile/
+
+### 3. Access Protected /profile/ With Bearer Token
+@token = {{login.response.body.jwt_token}}
+GET http://localhost:3000/profile/
+Authorization: Bearer {{token}}
+
+### 4. Fetch Protected /books/ With Bearer Token
+GET http://localhost:3000/books/
+Authorization: Bearer {{token}}
+
+### 5. Add Protected Book with User Identity Captured
+POST http://localhost:3000/books/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Building Microservices: Designing Fine-Grained Systems",
+  "author": "Sam Newman",
+  "price": 680,
+  "pages": 612
+}
