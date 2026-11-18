@@ -1,0 +1,22 @@
+{
+  "name": "lab-05-auth-middleware-protected-routes",
+  "version": "1.0.0",
+  "description": "Lab 05: JWT Authentication Middleware and Protected CRUD Routes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "SYED ISRAR HUSSAIN <syedisrarhussain976@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
