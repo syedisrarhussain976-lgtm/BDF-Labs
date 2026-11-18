@@ -176,3 +176,4 @@ module.exports = app;
 // [Route Metadata]: Expose student profile and system status on GET / for cloud health probes
 // [Input Sanitization]: Enforce mandatory presence of username, name and password fields
 // [Duplicate Prevention]: Query existing usernames with parameterized SQL placeholder (?) to prevent SQL injection
+// [Cryptographic Storage]: Securely hash plain-text passwords before persisting record to SQLite
