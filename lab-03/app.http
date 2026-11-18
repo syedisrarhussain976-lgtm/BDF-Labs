@@ -107,3 +107,5 @@ GET {{baseUrl}}/unknown-api-route/
 ### Test Case 21: Unknown Route
 
 ### Test Case 22: Max Price Lower Bound
+
+### Test Case 23: Non-numeric limit
