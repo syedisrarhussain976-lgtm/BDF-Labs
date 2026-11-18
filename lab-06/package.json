@@ -1,0 +1,20 @@
+{
+  "name": "lab-06-relational-schemas-sql-joins",
+  "version": "1.0.0",
+  "description": "Lab 06: Relational Database Schemas, Foreign Keys, and SQL Joins in Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "SYED ISRAR HUSSAIN <syedisrarhussain976@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
