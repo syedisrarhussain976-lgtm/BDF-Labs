@@ -215,3 +215,8 @@ Content-Type: application/json
   "username": "IsRaR_HuSsAiN",
   "password": "securePassword123"
 }
+### Test 28: Content-Type Header Validation (Text vs JSON)
+POST {{baseUrl}}/login
+Content-Type: text/plain
+
+raw text body instead of json
