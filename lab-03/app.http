@@ -1,22 +1,105 @@
-### Lab 03: Path & Query Parameters, Search & Pagination
-### Tested with VS Code REST Client
+### ==============================================================================
+### LAB 3: REST API, QUERY PARAMETERS, VALIDATION & DEBUGGING
+### Student: SYED ISRAR HUSSAIN | Reg No: 252U1R1235 | Section: CSE-2E
+### Base URL: http://localhost:3000
+### ==============================================================================
 
-### 1. Search books by query parameter (e.g. search_q=Harry)
-GET http://localhost:3000/books/?search_q=Harry
-Accept: application/json
+@baseUrl = http://localhost:3000
 
-### 2. Search, Sort and Paginate (limit=2, offset=0, order_by=price, order=DESC)
-GET http://localhost:3000/books/?order_by=price&order=DESC&limit=2&offset=0
-Accept: application/json
+### 1. Root / Directory Route
+GET {{baseUrl}}/
 
-### 3. Filter books by price range (min_price=300 & max_price=500)
-GET http://localhost:3000/books/filter?min_price=300&max_price=500
-Accept: application/json
+### 2. GET All Books (Default Limit=10, Offset=0, Order=id ASC)
+GET {{baseUrl}}/books/
 
-### 4. Database Aggregate Statistics
-GET http://localhost:3000/books/stats/summary
-Accept: application/json
+### 3. GET Search Books by Title (search_q=JavaScript)
+GET {{baseUrl}}/books/?search_q=JavaScript
 
-### 5. Fetch books by author path parameter
-GET http://localhost:3000/books/author/Tolkien/
-Accept: application/json
+### 4. GET Sort Books by Price Descending (order_by=price&order=DESC)
+GET {{baseUrl}}/books/?order_by=price&order=DESC
+
+### 5. GET Pagination (limit=3&offset=3)
+GET {{baseUrl}}/books/?limit=3&offset=3
+
+### 6. GET Price Range Filter (min_price=400&max_price=800)
+GET {{baseUrl}}/books/?min_price=400&max_price=800
+
+### 7. GET Combined Query Filters
+GET {{baseUrl}}/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0
+
+### 8. GET Single Book by ID (ID 1)
+GET {{baseUrl}}/books/1/
+
+### 9. POST Add New Book (201 Created)
+POST {{baseUrl}}/books/
+Content-Type: application/json
+
+{
+  "title": "System Design Interview",
+  "author": "Alex Xu",
+  "price": 850,
+  "pages": 300
+}
+
+### 10. PUT Update Existing Book (ID 1)
+PUT {{baseUrl}}/books/1/
+Content-Type: application/json
+
+{
+  "title": "The Pragmatic Programmer (20th Anniversary Edition)",
+  "author": "David Thomas, Andrew Hunt",
+  "price": 799,
+  "pages": 360
+}
+
+### 11. DELETE Book by ID (ID 15)
+DELETE {{baseUrl}}/books/15/
+
+### 12. Validation Test: Missing Title on POST
+POST {{baseUrl}}/books/
+Content-Type: application/json
+
+{
+  "author": "Robert C. Martin",
+  "price": 500,
+  "pages": 300
+}
+
+### 13. Validation Test: Missing Author on POST
+POST {{baseUrl}}/books/
+Content-Type: application/json
+
+{
+  "title": "Clean Architecture",
+  "price": 500,
+  "pages": 300
+}
+
+### 14. Validation Test: Negative Price on POST
+POST {{baseUrl}}/books/
+Content-Type: application/json
+
+{
+  "title": "Invalid Price Book",
+  "author": "Unknown Author",
+  "price": -100,
+  "pages": 200
+}
+
+### 15. Validation Test: Invalid order_by Field
+GET {{baseUrl}}/books/?order_by=invalid_column
+
+### 16. Validation Test: Invalid order Sort Direction
+GET {{baseUrl}}/books/?order=DIAGONAL
+
+### 17. Validation Test: Negative limit
+GET {{baseUrl}}/books/?limit=-5
+
+### 18. Validation Test: Non-numeric ID
+GET {{baseUrl}}/books/abc/
+
+### 19. 404 Test: Non-existent ID
+GET {{baseUrl}}/books/999/
+
+### 20. 404 Test: Unknown Route
+GET {{baseUrl}}/unknown-api-route/
