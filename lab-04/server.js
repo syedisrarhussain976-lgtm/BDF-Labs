@@ -173,3 +173,4 @@ module.exports = app;
 // [JWT Claim Policy]: Secret key defined as constant for Lab 4 syllabus specifications
 // [Database Isolation]: Guarantee users.db directory existence synchronously before driver initialization
 // [Schema Provisioning]: Auto-create user table with PRIMARY KEY, UNIQUE username, name and password hash
+// [Route Metadata]: Expose student profile and system status on GET / for cloud health probes
