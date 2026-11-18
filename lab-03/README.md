@@ -552,3 +552,5 @@ Aurora Deemed-to-be-University
 <!-- Architecture notes -->
 
 <!-- Security notes -->
+
+<!-- Performance notes -->
