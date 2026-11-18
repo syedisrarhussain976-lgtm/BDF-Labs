@@ -574,3 +574,4 @@ Through **Lab 4**, I achieved the following learning outcomes:
 <!-- Automated Testing: 100% test scenario coverage across happy paths, missing payloads, and duplicate collisions. -->
 <!-- Cloud Hosting Architecture: Deployed on Render Node.js runtime with zero-downtime auto-deploy on commit. -->
 <!-- Database Integrity: Foreign key constraints and UNIQUE index on user(username) prevent account collision. -->
+<!-- Security Defense: Parameterized SQL prevents SQL injection attacks across all incoming client parameters. -->
