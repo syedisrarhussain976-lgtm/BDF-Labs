@@ -229,3 +229,8 @@ Accept: application/json
 ### Test 31: Cloud Render - GET /register Schema Verification
 GET {{renderUrl}}/register
 Accept: application/json
+### Test 32: Cloud Render - Malformed JSON Handling
+POST {{renderUrl}}/register
+Content-Type: application/json
+
+{ malformed json
