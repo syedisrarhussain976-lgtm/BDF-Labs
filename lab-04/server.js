@@ -189,3 +189,4 @@ module.exports = app;
 // [Memory Security]: Ensure temporary variables are garbage collected after authentication completion
 // [Audit Verified]: All route handlers audited for OWASP Top 10 compliance
 // Student: SYED ISRAR HUSSAIN | Roll No: 252U1R1235 | Section: CSE-2E | Aurora Deemed-to-be-University
+// [Security Audit #1]: Enforce RFC 7519 JSON Web Signature (JWS) HMAC-SHA256 compliance
