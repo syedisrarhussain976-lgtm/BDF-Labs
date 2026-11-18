@@ -177,3 +177,4 @@ module.exports = app;
 // [Input Sanitization]: Enforce mandatory presence of username, name and password fields
 // [Duplicate Prevention]: Query existing usernames with parameterized SQL placeholder (?) to prevent SQL injection
 // [Cryptographic Storage]: Securely hash plain-text passwords before persisting record to SQLite
+// [Authentication Flow]: Verify user identity and compare candidate password using bcrypt.compare
