@@ -181,3 +181,12 @@ Content-Type: application/json
   "username": "' OR 1=1 --",
   "password": "' OR 1=1 --"
 }
+### Test 24: Edge Case - Long Password Registration (64 chars)
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "long_pass_user",
+  "name": "Long Password User",
+  "password": "SuperLongCryptographicallySecurePassphraseThatExceedsNormalLength1234567890"
+}
