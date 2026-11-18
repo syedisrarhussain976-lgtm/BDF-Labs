@@ -226,3 +226,6 @@ Accept: application/json
 ### Test 30: Cloud Render - GET /login Schema Verification
 GET {{renderUrl}}/login
 Accept: application/json
+### Test 31: Cloud Render - GET /register Schema Verification
+GET {{renderUrl}}/register
+Accept: application/json
