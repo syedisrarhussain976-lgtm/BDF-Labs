@@ -12,7 +12,7 @@
 | **Registration Number** | 252U1R1235 |
 | **Section** | CSE-2E |
 | **Course** | Backend Development Fundamentals |
-| **Faculty** | Joel Prashanth D |
+| **Faculty** |  Mr Yugandhar Gurjalwar |
 | **Institution** | Aurora Deemed-to-be-University |
 | **GitHub Repository** | [https://github.com/syedisrarhussain976-lgtm/BDF-Labs](https://github.com/syedisrarhussain976-lgtm/BDF-Labs) |
 | **Repository Path** | `lab-04/` in course GitHub repository |
