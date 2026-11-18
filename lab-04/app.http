@@ -115,3 +115,6 @@ Content-Type: application/json
 GET {{renderUrl}}/unmatched-path
 ### 18. Local 404 Route Test
 GET {{baseUrl}}/undefined-endpoint
+### Test 19: Health Telemetry Inspection
+GET {{baseUrl}}/
+User-Agent: VSCode-RestClient-Student-SyedIsrarHussain
