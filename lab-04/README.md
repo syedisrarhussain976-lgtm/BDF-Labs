@@ -573,3 +573,4 @@ Through **Lab 4**, I achieved the following learning outcomes:
 <!-- HTTP Status Compliance: 201 Created on registration, 200 OK on authenticated login, 400 Bad Request on failure. -->
 <!-- Automated Testing: 100% test scenario coverage across happy paths, missing payloads, and duplicate collisions. -->
 <!-- Cloud Hosting Architecture: Deployed on Render Node.js runtime with zero-downtime auto-deploy on commit. -->
+<!-- Database Integrity: Foreign key constraints and UNIQUE index on user(username) prevent account collision. -->
