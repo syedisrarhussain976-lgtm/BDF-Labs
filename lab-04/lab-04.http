@@ -260,3 +260,11 @@ Content-Type: application/json
   "name": "Syed Israr Hussain",
   "password": "securePassword123"
 }
+### Test 38: Cloud Verification - Invalid Password Guard
+POST {{renderUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "password": "completelyWrongPassword"
+}
