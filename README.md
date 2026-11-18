@@ -406,3 +406,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Execution guides -->
 
 <!-- API endpoint table -->
+
+<!-- Database documentation -->
