@@ -92,3 +92,6 @@ Content-Type: application/json
 ### 13. Production Render: GET /register Helper
 GET {{renderUrl}}/register
 Accept: application/json
+### 14. Production Render: GET /login Helper
+GET {{renderUrl}}/login
+Accept: application/json
