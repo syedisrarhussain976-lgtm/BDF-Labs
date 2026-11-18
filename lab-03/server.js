@@ -374,3 +374,5 @@ module.exports = app;
 // Security: sanitize search inputs
 
 /* Whitelist validator */
+
+/* Pagination parser */
