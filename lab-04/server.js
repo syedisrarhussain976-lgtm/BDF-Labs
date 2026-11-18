@@ -174,3 +174,4 @@ module.exports = app;
 // [Database Isolation]: Guarantee users.db directory existence synchronously before driver initialization
 // [Schema Provisioning]: Auto-create user table with PRIMARY KEY, UNIQUE username, name and password hash
 // [Route Metadata]: Expose student profile and system status on GET / for cloud health probes
+// [Input Sanitization]: Enforce mandatory presence of username, name and password fields
