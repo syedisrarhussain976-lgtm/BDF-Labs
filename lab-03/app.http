@@ -103,3 +103,5 @@ GET {{baseUrl}}/books/999/
 
 ### 20. 404 Test: Unknown Route
 GET {{baseUrl}}/unknown-api-route/
+
+### Test Case 21: Unknown Route
