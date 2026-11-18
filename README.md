@@ -402,3 +402,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Learning outcomes -->
 
 <!-- Project structure -->
+
+<!-- Execution guides -->
