@@ -1,0 +1,49 @@
+### Lab 04: Registration, Login, and JWT
+### Tested with VS Code REST Client
+
+### 1. Register a new valid user
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "name": "SYED ISRAR HUSSAIN",
+  "password": "StrongPassword@2026"
+}
+
+### 2. Attempt duplicate registration (Expect 400: User already exists)
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "name": "SYED ISRAR HUSSAIN",
+  "password": "StrongPassword@2026"
+}
+
+### 3. Login with correct credentials (Expect 200: jwt_token)
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "password": "StrongPassword@2026"
+}
+
+### 4. Login with invalid password (Expect 400: Invalid password)
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "password": "WrongPassword!"
+}
+
+### 5. Login with non-existent user (Expect 400: Invalid user)
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "unknown_user_999",
+  "password": "SomePassword"
+}
