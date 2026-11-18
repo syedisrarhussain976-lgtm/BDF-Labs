@@ -1,20 +1,31 @@
 {
-  "name": "lab-03-query-path-params-sql",
+  "name": "lab-03-rest-api-query-params",
   "version": "1.0.0",
-  "description": "Lab 03: Path and Query Parameters, Search, Sorting, and Pagination in Express & SQLite",
+  "description": "Lab 3 - REST API, Query Parameters, Validation, and Debugging for Backend Development Fundamentals",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "author": "SYED ISRAR HUSSAIN <syedisrarhussain976@gmail.com>",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sqlite",
+    "rest-api",
+    "validation",
+    "query-parameters",
+    "debugging",
+    "lab3"
+  ],
+  "author": "SYED ISRAR HUSSAIN (252U1R1235)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
+    "nodemon": "^3.1.4",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.4"
   }
 }
