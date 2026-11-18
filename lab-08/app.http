@@ -1,0 +1,10 @@
+### Lab 08: Environment Variables, Security & CORS
+### Tested with VS Code REST Client
+
+### 1. Inspect Security Headers & Configuration
+GET http://localhost:3000/security/status
+Accept: application/json
+
+### 2. Verify Database Read with Helmet Protected Headers
+GET http://localhost:3000/books/
+Accept: application/json
