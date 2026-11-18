@@ -548,3 +548,5 @@ In this lab, I learned:
 
 **SYED ISRAR HUSSAIN** – 252U1R1235 – CSE-2E  
 Aurora Deemed-to-be-University
+
+<!-- Architecture notes -->
