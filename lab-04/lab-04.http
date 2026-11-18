@@ -1,0 +1,138 @@
+@baseUrl = http://localhost:3000
+@renderUrl = https://syed-israr-hussain-lab4.onrender.com
+
+### ==============================================================================
+### LOCAL ENVIRONMENT TESTS (http://localhost:3000)
+### ==============================================================================
+
+### 1. Root Service Info & Student Verification
+GET {{baseUrl}}/
+Accept: application/json
+
+### 2. GET /register Info & Documentation
+GET {{baseUrl}}/register
+Accept: application/json
+
+### 3. Register New User (201 Created)
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "name": "Syed Israr Hussain",
+  "password": "securePassword123"
+}
+
+### 4. Register Duplicate Username (400 Bad Request)
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "name": "Syed Israr Hussain",
+  "password": "securePassword123"
+}
+
+### 5. Register Missing Mandatory Fields (400 Bad Request)
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "name": "Syed Israr Hussain"
+}
+
+### 6. GET /login Info & Documentation
+GET {{baseUrl}}/login
+Accept: application/json
+
+### 7. Login with Correct Credentials (200 OK -> Returns JWT)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "password": "securePassword123"
+}
+
+### 8. Login with Unknown Username (400 Bad Request)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "unknown_user",
+  "password": "securePassword123"
+}
+
+### 9. Login with Incorrect Password (400 Bad Request)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "password": "wrongPasswordXYZ"
+}
+
+### 10. Login Missing Required Fields (400 Bad Request)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "israr_hussain"
+}
+
+### 11. 404 Route Not Found
+GET {{baseUrl}}/undefined-route
+
+### ==============================================================================
+### CLOUD ENVIRONMENT TESTS (Render Deployment: https://syed-israr-hussain-lab4.onrender.com)
+### ==============================================================================
+
+### 12. Cloud: Root Service Info & Student Metadata
+GET {{renderUrl}}/
+Accept: application/json
+
+### 13. Cloud: GET /register Info
+GET {{renderUrl}}/register
+Accept: application/json
+
+### 14. Cloud: Register New User (201 Created)
+POST {{renderUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "israr_cloud",
+  "name": "Syed Israr Hussain",
+  "password": "cloudPassword123"
+}
+
+### 15. Cloud: Register Duplicate User (400 Bad Request)
+POST {{renderUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "israr_cloud",
+  "name": "Syed Israr Hussain",
+  "password": "cloudPassword123"
+}
+
+### 16. Cloud: Login with Correct Credentials (200 OK -> JWT)
+POST {{renderUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "israr_cloud",
+  "password": "cloudPassword123"
+}
+
+### 17. Cloud: Login with Invalid Credentials (400 Bad Request)
+POST {{renderUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "israr_cloud",
+  "password": "wrongPassword"
+}
+
+### 18. Cloud: 404 Route Not Found
+GET {{renderUrl}}/notfound
