@@ -237,3 +237,6 @@ Content-Type: application/json
 ### Test 33: Verification - Root Endpoint Header Validation
 HEAD {{baseUrl}}/
 Accept: application/json
+### Test 34: Health Telemetry Inspection
+GET {{baseUrl}}/
+User-Agent: VSCode-RestClient-Student-SyedIsrarHussain
