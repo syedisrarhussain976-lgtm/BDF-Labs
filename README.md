@@ -404,3 +404,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Project structure -->
 
 <!-- Execution guides -->
+
+<!-- API endpoint table -->
