@@ -386,3 +386,5 @@ module.exports = app;
 /* Student identity */
 
 /* DB Seed check */
+
+/* CORS preparation */
