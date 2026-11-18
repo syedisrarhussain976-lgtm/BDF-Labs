@@ -188,3 +188,4 @@ module.exports = app;
 // [Route Aliases]: Support both trailing slash and non-trailing slash route variations
 // [Memory Security]: Ensure temporary variables are garbage collected after authentication completion
 // [Audit Verified]: All route handlers audited for OWASP Top 10 compliance
+// Student: SYED ISRAR HUSSAIN | Roll No: 252U1R1235 | Section: CSE-2E | Aurora Deemed-to-be-University
