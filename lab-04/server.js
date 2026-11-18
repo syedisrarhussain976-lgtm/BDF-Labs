@@ -172,3 +172,4 @@ module.exports = app;
 // [Security Architecture]: bcrypt blowfish cost factor initialized to 10 rounds
 // [JWT Claim Policy]: Secret key defined as constant for Lab 4 syllabus specifications
 // [Database Isolation]: Guarantee users.db directory existence synchronously before driver initialization
+// [Schema Provisioning]: Auto-create user table with PRIMARY KEY, UNIQUE username, name and password hash
