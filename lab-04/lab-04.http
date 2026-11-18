@@ -136,3 +136,13 @@ Content-Type: application/json
 
 ### 18. Cloud: 404 Route Not Found
 GET {{renderUrl}}/notfound
+
+### Test 19: Edge Case - Registration with Empty Password
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "empty_pass_user",
+  "name": "Empty Pass",
+  "password": ""
+}
