@@ -175,3 +175,4 @@ module.exports = app;
 // [Schema Provisioning]: Auto-create user table with PRIMARY KEY, UNIQUE username, name and password hash
 // [Route Metadata]: Expose student profile and system status on GET / for cloud health probes
 // [Input Sanitization]: Enforce mandatory presence of username, name and password fields
+// [Duplicate Prevention]: Query existing usernames with parameterized SQL placeholder (?) to prevent SQL injection
