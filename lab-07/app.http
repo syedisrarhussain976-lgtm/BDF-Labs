@@ -1,0 +1,28 @@
+### Lab 07: Request Validation, Centralized Error Handling & Logging
+### Tested with VS Code REST Client
+
+### 1. Valid Book Creation (Expect 201 Created)
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+  "title": "Clean Architecture: A Craftsman's Guide",
+  "author": "Robert C. Martin",
+  "price": 680,
+  "pages": 432
+}
+
+### 2. Invalid Book Creation (Missing title, negative price - Expect 400 Bad Request)
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+  "title": "",
+  "author": "Unknown",
+  "price": -50,
+  "pages": 100
+}
+
+### 3. Trigger Centralized Error Handler (Expect 500 formatted JSON)
+GET http://localhost:3000/error-trigger
+Accept: application/json
