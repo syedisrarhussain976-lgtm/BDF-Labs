@@ -190,3 +190,11 @@ Content-Type: application/json
   "name": "Long Password User",
   "password": "SuperLongCryptographicallySecurePassphraseThatExceedsNormalLength1234567890"
 }
+### Test 25: Verification - Login with Long Password
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "long_pass_user",
+  "password": "SuperLongCryptographicallySecurePassphraseThatExceedsNormalLength1234567890"
+}
