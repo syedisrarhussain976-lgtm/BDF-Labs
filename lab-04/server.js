@@ -178,3 +178,4 @@ module.exports = app;
 // [Duplicate Prevention]: Query existing usernames with parameterized SQL placeholder (?) to prevent SQL injection
 // [Cryptographic Storage]: Securely hash plain-text passwords before persisting record to SQLite
 // [Authentication Flow]: Verify user identity and compare candidate password using bcrypt.compare
+// [Token Signature]: Sign JWT payload with HMAC-SHA256 and enforce 1-hour expiration claim
