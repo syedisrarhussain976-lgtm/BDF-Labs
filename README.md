@@ -408,3 +408,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- API endpoint table -->
 
 <!-- Database documentation -->
+
+<!-- Security standards -->
