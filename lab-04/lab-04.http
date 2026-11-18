@@ -155,3 +155,12 @@ Content-Type: application/json
   "name": "Empty Username",
   "password": "validPassword123"
 }
+### Test 21: Edge Case - Registration with Whitespace-only Username
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "   ",
+  "name": "Whitespace",
+  "password": "validPassword123"
+}
