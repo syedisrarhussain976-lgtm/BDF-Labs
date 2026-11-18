@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "db": "node -e \"const {open}=require('sqlite'),sqlite3=require('sqlite3');(async()=>{const db=await open({filename:'database/users.db',driver:sqlite3.Database});console.table(await db.all('SELECT id, username, name, password FROM user;'));})()\""
+    "db": "node -e \"const {open}=require('sqlite'),sqlite3=require('sqlite3');(async()=>{const db=await open({filename:'database/users.db',driver:sqlite3.Database});console.table(await db.all('SELECT id, username, name, password FROM user;'));})()\",
+    "test": "node ../scratch/run_all_tests.js""
   },
   "engines": {
     "node": "20.x"
