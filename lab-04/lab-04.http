@@ -251,3 +251,12 @@ Content-Type: application/json
 ### Test 36: Cloud Verification - HTTP Status Header Check
 GET {{renderUrl}}/
 Accept: application/json
+### Test 37: Cloud Verification - User Registration Duplicate Guard
+POST {{renderUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "israr_hussain",
+  "name": "Syed Israr Hussain",
+  "password": "securePassword123"
+}
