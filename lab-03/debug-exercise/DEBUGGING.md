@@ -235,3 +235,5 @@ Methods on the `sqlite` driver (`db.all`, `db.get`, `db.run`, `db.exec`) are asy
 | **Missing `await`** | Empty JSON `{}` response payload | Always `await` asynchronous database queries inside `async` route handlers |
 
 <!-- Bug 1 root cause -->
+
+<!-- Bug 2 module resolution -->
