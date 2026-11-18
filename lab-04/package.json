@@ -1,11 +1,15 @@
 {
-  "name": "lab-04-registration-login-jwt",
+  "name": "lab-04",
   "version": "1.0.0",
-  "description": "Lab 04: User Registration, Login, and JWT Authentication in Express",
+  "description": "Registration, login and JWT Authentication",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "db": "node -e \"const {open}=require('sqlite'),sqlite3=require('sqlite3');(async()=>{const db=await open({filename:'database/users.db',driver:sqlite3.Database});console.table(await db.all('SELECT id, username, name, password FROM user;'));})()\""
+  },
+  "engines": {
+    "node": "20.x"
   },
   "author": "SYED ISRAR HUSSAIN <syedisrarhussain976@gmail.com>",
   "license": "ISC",
