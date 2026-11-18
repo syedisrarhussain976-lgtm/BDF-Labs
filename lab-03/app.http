@@ -113,3 +113,5 @@ GET {{baseUrl}}/unknown-api-route/
 ### Test Case 24: Float offset
 
 ### Test Case 25: SQL Injection Attempt in search_q
+
+### Test Case 26: SQL Injection Attempt in order_by
