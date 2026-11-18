@@ -198,3 +198,12 @@ Content-Type: application/json
   "username": "long_pass_user",
   "password": "SuperLongCryptographicallySecurePassphraseThatExceedsNormalLength1234567890"
 }
+### Test 26: Edge Case - Special Characters in Username
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "username": "israr.dev@2026",
+  "name": "Special Chars",
+  "password": "testPassword123"
+}
