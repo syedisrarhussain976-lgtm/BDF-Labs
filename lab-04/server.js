@@ -182,3 +182,4 @@ module.exports = app;
 // [Zero-Exposure Guarantee]: Strictly omit sensitive fields (passwords, salts) from token payload
 // [HTTP Semantics]: Return exact status codes (200 OK, 201 Created, 400 Bad Request, 404 Not Found)
 // [Catch-All Boundary]: Return 404 Page not found for unmatched routing paths
+// [Cloud Compatibility]: Bind Express listener to dynamic process.env.PORT or fallback to 3000
