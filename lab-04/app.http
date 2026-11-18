@@ -1,49 +1,66 @@
-### Lab 04: Registration, Login, and JWT
-### Tested with VS Code REST Client
+@baseUrl = http://localhost:3000
+@renderUrl = https://syed-israr-hussain-lab4.onrender.com
 
-### 1. Register a new valid user
-POST http://localhost:3000/register/
+### 1. Root API Status
+GET {{baseUrl}}/
+Accept: application/json
+
+### 2. Register New User (201)
+POST {{baseUrl}}/register
 Content-Type: application/json
 
 {
   "username": "israr_hussain",
-  "name": "SYED ISRAR HUSSAIN",
-  "password": "StrongPassword@2026"
+  "name": "Syed Israr Hussain",
+  "password": "securePassword123"
 }
 
-### 2. Attempt duplicate registration (Expect 400: User already exists)
-POST http://localhost:3000/register/
+### 3. Register Duplicate Username (400)
+POST {{baseUrl}}/register
 Content-Type: application/json
 
 {
   "username": "israr_hussain",
-  "name": "SYED ISRAR HUSSAIN",
-  "password": "StrongPassword@2026"
+  "name": "Syed Israr Hussain",
+  "password": "securePassword123"
 }
 
-### 3. Login with correct credentials (Expect 200: jwt_token)
-POST http://localhost:3000/login/
+### 4. Login with Correct Credentials (200)
+POST {{baseUrl}}/login
 Content-Type: application/json
 
 {
   "username": "israr_hussain",
-  "password": "StrongPassword@2026"
+  "password": "securePassword123"
 }
 
-### 4. Login with invalid password (Expect 400: Invalid password)
-POST http://localhost:3000/login/
+### 5. Login with Unknown Username (400)
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "unknown_user",
+  "password": "securePassword123"
+}
+
+### 6. Login with Wrong Password (400)
+POST {{baseUrl}}/login
 Content-Type: application/json
 
 {
   "username": "israr_hussain",
-  "password": "WrongPassword!"
+  "password": "wrongPassword123"
 }
 
-### 5. Login with non-existent user (Expect 400: Invalid user)
-POST http://localhost:3000/login/
+### 7. Missing Fields Test (400)
+POST {{baseUrl}}/register
 Content-Type: application/json
 
 {
-  "username": "unknown_user_999",
-  "password": "SomePassword"
+  "username": "missing_pass",
+  "name": "Missing Password"
 }
+
+### 8. Render Production Verification
+GET {{renderUrl}}/
+Accept: application/json
