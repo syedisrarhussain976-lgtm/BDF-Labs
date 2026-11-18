@@ -421,3 +421,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Academic credentials -->
 
 <!-- Submission audit -->
+
+<!-- Lab 04 Verification: Fully implemented and deployed live at https://syed-israr-hussain-lab4.onrender.com -->
