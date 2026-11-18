@@ -185,3 +185,4 @@ module.exports = app;
 // [Cloud Compatibility]: Bind Express listener to dynamic process.env.PORT or fallback to 3000
 // [Fail-Safe Recovery]: Gracefully log fatal initialization errors and exit with code 1
 // [REST Client Helper]: Provide discoverable sample request bodies on GET /register and GET /login
+// [Route Aliases]: Support both trailing slash and non-trailing slash route variations
