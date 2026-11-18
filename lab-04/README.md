@@ -569,3 +569,4 @@ Through **Lab 4**, I achieved the following learning outcomes:
 
 <!-- Architectural Note: Salt rounds = 10 enforces 1,024 Blowfish iterations preventing GPU-accelerated hash cracking. -->
 <!-- Cryptographic Guarantee: Plain-text passwords never touch database persistence layers or standard output logs. -->
+<!-- Token Standard: RFC 7519 JSON Web Token specification strictly implemented. -->
