@@ -207,3 +207,11 @@ Content-Type: application/json
   "name": "Special Chars",
   "password": "testPassword123"
 }
+### Test 27: Case Sensitivity Test - Mixed Case Username Verification
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "username": "IsRaR_HuSsAiN",
+  "password": "securePassword123"
+}
