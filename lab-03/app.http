@@ -115,3 +115,5 @@ GET {{baseUrl}}/unknown-api-route/
 ### Test Case 25: SQL Injection Attempt in search_q
 
 ### Test Case 26: SQL Injection Attempt in order_by
+
+### Test Case 27: Case Insensitive Order
