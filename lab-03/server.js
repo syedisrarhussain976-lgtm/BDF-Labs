@@ -376,3 +376,5 @@ module.exports = app;
 /* Whitelist validator */
 
 /* Pagination parser */
+
+/* Price validator */
