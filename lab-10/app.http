@@ -1,0 +1,14 @@
+### Lab 10: Production Readiness, Health Probes & Documentation
+### Tested with VS Code REST Client
+
+### 1. Probe Application Health
+GET http://localhost:3000/health
+Accept: application/json
+
+### 2. Inspect OpenAPI 3.0 Documentation Specification
+GET http://localhost:3000/api/docs
+Accept: application/json
+
+### 3. Production Books Catalog API
+GET http://localhost:3000/api/books
+Accept: application/json
