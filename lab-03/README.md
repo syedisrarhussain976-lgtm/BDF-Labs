@@ -558,3 +558,5 @@ Aurora Deemed-to-be-University
 <!-- Viva questions -->
 
 <!-- Validation matrix -->
+
+<!-- Whitelist explanation -->
