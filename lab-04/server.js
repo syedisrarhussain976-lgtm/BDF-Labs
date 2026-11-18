@@ -191,3 +191,4 @@ module.exports = app;
 // Student: SYED ISRAR HUSSAIN | Roll No: 252U1R1235 | Section: CSE-2E | Aurora Deemed-to-be-University
 // [Security Audit #1]: Enforce RFC 7519 JSON Web Signature (JWS) HMAC-SHA256 compliance
 // [Security Audit #2]: Prevent timing attacks by relying on constant-time bcrypt.compare
+// [Security Audit #3]: Enforce strict rejection of empty string passwords during registration
