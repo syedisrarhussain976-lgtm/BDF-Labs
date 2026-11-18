@@ -1,0 +1,21 @@
+### Lab 09: Modular MVC Architecture & Database Seeding
+### Tested with VS Code REST Client
+
+### 1. GET All Books via MVC Pipeline
+GET http://localhost:3000/api/v1/books/
+Accept: application/json
+
+### 2. GET Book by ID (ID 1)
+GET http://localhost:3000/api/v1/books/1
+Accept: application/json
+
+### 3. POST New Book via MVC Controller
+POST http://localhost:3000/api/v1/books/
+Content-Type: application/json
+
+{
+  "title": "Patterns of Enterprise Application Architecture",
+  "author": "Martin Fowler",
+  "price": 810,
+  "pages": 560
+}
