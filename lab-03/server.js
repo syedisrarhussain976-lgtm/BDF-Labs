@@ -384,3 +384,5 @@ module.exports = app;
 /* EADDRINUSE handler */
 
 /* Student identity */
+
+/* DB Seed check */
