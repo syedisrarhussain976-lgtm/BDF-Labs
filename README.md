@@ -93,14 +93,22 @@ BDF-Labs/
 │   │   └── init.sql                    # DDL schema & initial seed data
 │   └── screenshots/
 │
-├── lab-03/                             # Lab 03: Query Parameters & Search/Pagination
-│   ├── app.http
-│   ├── package.json
-│   ├── server.js
-│   ├── README.md
-│   ├── database/
-│   │   └── bookStore.db
-│   └── screenshots/
+├── lab-03/                             # Lab 03: REST API, Query Parameters, Validation & Debugging
+│   ├── .env.example                    # Environment variable configuration template
+│   ├── .gitignore                      # Local Git ignore rules
+│   ├── .node-version                   # Node.js 20.18.0 specification
+│   ├── app.http                        # VS Code REST Client testing requests
+│   ├── database.db                     # SQLite database with 15 seeded book records
+│   ├── package.json                    # Project dependencies & scripts
+│   ├── package-lock.json
+│   ├── server.js                       # Express REST API with query params & error handling
+│   ├── README.md                       # Comprehensive Lab 3 documentation
+│   ├── debug-exercise/                 # Deliberate debugging module
+│   │   ├── DEBUGGING.md                # 4-bug root cause analysis & fixes
+│   │   └── server-broken.js            # Reproducible error demonstration server
+│   ├── postman/
+│   │   └── Lab3.postman_collection.json # Comprehensive 21-case Postman test suite
+│   └── screenshots/                    # 16 verified execution screenshots
 │
 ├── lab-04/                             # Lab 04: Registration, Login & JWT Auth
 │   ├── app.http
@@ -196,7 +204,7 @@ BDF-Labs/
 |:---:|:------|:------------------|:--------------------------|:-------------:|:---------------------:|
 | **01** | Introduction to Node.js & HTTP Server | Node.js, Express | Dynamic HTTP routing, plain text, formatted date JSON, HTML responses | [Lab 01 README](lab-01/README.md) | **Completed** |
 | **02** | SQLite Database & CRUD Routes | Express, SQLite, sqlite3 | Complete CRUD REST operations on `book` table, parameterized queries | [Lab 02 README](lab-02/README.md) | **Completed** |
-| **03** | Path & Query Parameters, Advanced SQL | Express, SQLite | Search (`LIKE`), sorting (`ORDER BY`), pagination (`LIMIT`/`OFFSET`), aggregations | [Lab 03 README](lab-03/README.md) | **Completed** |
+| **03** | REST API, Query Parameters, Validation, and Debugging | Express, SQLite, sqlite3, Postman | Dynamic SQL query parameters (`search_q`, `order_by`, `order`, pagination `limit`/`offset`, `min_price`/`max_price`), whitelisting, payload validation, 4-bug debugging suite, 21 Postman tests | [Lab 03 README](lab-03/README.md) | **Completed** |
 | **04** | User Registration, Login & JWT | Express, bcrypt, JWT, SQLite | Salted password hashing (salt 10), duplicate user check, JWT token issuance | [Lab 04 README](lab-04/README.md) | **Completed** |
 | **05** | Auth Middleware & Protected Routes | Express, JWT, SQLite | Bearer token authorization middleware, 401 Unauthorized handling, protected CRUD | [Lab 05 README](lab-05/README.md) | **Completed** |
 | **06** | Relational Schemas & SQL Joins | Express, SQLite (FKs) | Author-book relational schema, `INNER JOIN`, `LEFT JOIN`, `GROUP BY` aggregations | [Lab 06 README](lab-06/README.md) | **Completed** |
