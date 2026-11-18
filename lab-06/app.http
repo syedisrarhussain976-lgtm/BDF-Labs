@@ -1,0 +1,28 @@
+### Lab 06: Relational Schemas, Foreign Keys, and SQL Joins
+### Tested with VS Code REST Client
+
+### 1. Fetch All Authors
+GET http://localhost:3000/authors/
+Accept: application/json
+
+### 2. Create a New Author
+POST http://localhost:3000/authors/
+Content-Type: application/json
+
+{
+  "name": "Douglas Adams",
+  "email": "adams@galaxy.org",
+  "country": "United Kingdom"
+}
+
+### 3. Fetch Books by Specific Author (Author ID 1)
+GET http://localhost:3000/authors/1/books/
+Accept: application/json
+
+### 4. Fetch Books with Author Details via SQL INNER JOIN
+GET http://localhost:3000/books-with-authors/
+Accept: application/json
+
+### 5. Fetch Author Publishing Stats via SQL LEFT JOIN & GROUP BY
+GET http://localhost:3000/authors-stats/
+Accept: application/json
