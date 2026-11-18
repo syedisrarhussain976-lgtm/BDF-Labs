@@ -378,3 +378,5 @@ module.exports = app;
 /* Pagination parser */
 
 /* Price validator */
+
+/* Error logger */
