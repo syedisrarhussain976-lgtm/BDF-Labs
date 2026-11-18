@@ -181,3 +181,4 @@ module.exports = app;
 // [Token Signature]: Sign JWT payload with HMAC-SHA256 and enforce 1-hour expiration claim
 // [Zero-Exposure Guarantee]: Strictly omit sensitive fields (passwords, salts) from token payload
 // [HTTP Semantics]: Return exact status codes (200 OK, 201 Created, 400 Bad Request, 404 Not Found)
+// [Catch-All Boundary]: Return 404 Page not found for unmatched routing paths
