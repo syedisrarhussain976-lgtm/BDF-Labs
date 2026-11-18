@@ -398,3 +398,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Changelog Lab 03 -->
 
 <!-- Technology matrix -->
+
+<!-- Learning outcomes -->
