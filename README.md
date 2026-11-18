@@ -410,3 +410,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Database documentation -->
 
 <!-- Security standards -->
+
+<!-- Academic credentials -->
