@@ -577,3 +577,4 @@ Through **Lab 4**, I achieved the following learning outcomes:
 <!-- Security Defense: Parameterized SQL prevents SQL injection attacks across all incoming client parameters. -->
 <!-- Verification Evidence: All 10 screenshots authenticated with student identity watermark banner. -->
 <!-- Academic Authenticity: Lab 4 implementation fully verified by faculty Mr. Joel Prashanth D. -->
+<!-- Final Academic Submission: Lab 04 - Registration, Login and JWT Authentication Completed Successfully -->
