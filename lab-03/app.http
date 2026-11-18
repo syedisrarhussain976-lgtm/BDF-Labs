@@ -1,0 +1,22 @@
+### Lab 03: Path & Query Parameters, Search & Pagination
+### Tested with VS Code REST Client
+
+### 1. Search books by query parameter (e.g. search_q=Harry)
+GET http://localhost:3000/books/?search_q=Harry
+Accept: application/json
+
+### 2. Search, Sort and Paginate (limit=2, offset=0, order_by=price, order=DESC)
+GET http://localhost:3000/books/?order_by=price&order=DESC&limit=2&offset=0
+Accept: application/json
+
+### 3. Filter books by price range (min_price=300 & max_price=500)
+GET http://localhost:3000/books/filter?min_price=300&max_price=500
+Accept: application/json
+
+### 4. Database Aggregate Statistics
+GET http://localhost:3000/books/stats/summary
+Accept: application/json
+
+### 5. Fetch books by author path parameter
+GET http://localhost:3000/books/author/Tolkien/
+Accept: application/json
