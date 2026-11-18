@@ -121,3 +121,5 @@ GET {{baseUrl}}/unknown-api-route/
 ### Test Case 28: Zero limit boundary
 
 ### Test Case 29: Large offset pagination
+
+### Test Case 30: Truncated whitespace in title
