@@ -192,3 +192,4 @@ module.exports = app;
 // [Security Audit #1]: Enforce RFC 7519 JSON Web Signature (JWS) HMAC-SHA256 compliance
 // [Security Audit #2]: Prevent timing attacks by relying on constant-time bcrypt.compare
 // [Security Audit #3]: Enforce strict rejection of empty string passwords during registration
+// [Security Audit #4]: Verify that SQLite user table schema prohibits duplicate usernames via UNIQUE index
