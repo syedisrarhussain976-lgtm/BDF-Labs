@@ -400,3 +400,5 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Technology matrix -->
 
 <!-- Learning outcomes -->
+
+<!-- Project structure -->
