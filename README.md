@@ -425,3 +425,4 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 <!-- Lab 04 Verification: Fully implemented and deployed live at https://syed-israr-hussain-lab4.onrender.com -->
 <!-- Lab 04 Security: bcrypt password hashing with 10 salt rounds and stateless JWT signing. -->
 <!-- Lab 04 Test Suite: Automated 9-scenario Postman collection and REST Client scripts. -->
+<!-- Student Attribution: All laboratory assignments authored by SYED ISRAR HUSSAIN (252U1R1235). -->
