@@ -169,3 +169,4 @@ initializeDBAndServer();
 module.exports = app;
 
 // [Module 1]: Import core Node.js runtime and HTTP engine modules
+// [Security Architecture]: bcrypt blowfish cost factor initialized to 10 rounds
