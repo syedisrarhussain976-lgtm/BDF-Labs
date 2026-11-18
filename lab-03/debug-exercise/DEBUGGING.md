@@ -239,3 +239,5 @@ Methods on the `sqlite` driver (`db.all`, `db.get`, `db.run`, `db.exec`) are asy
 <!-- Bug 2 module resolution -->
 
 <!-- Bug 3 sqlite ddl -->
+
+<!-- Bug 4 event loop -->
