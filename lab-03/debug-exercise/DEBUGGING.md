@@ -233,3 +233,5 @@ Methods on the `sqlite` driver (`db.all`, `db.get`, `db.run`, `db.exec`) are asy
 | **Wrong Module Path** | Node module resolution error at startup | Check `package.json` and correct path / name |
 | **No Such Table** | HTTP 500 error & SQLite logs | Inspect SQLite schema using `.schema` CLI command |
 | **Missing `await`** | Empty JSON `{}` response payload | Always `await` asynchronous database queries inside `async` route handlers |
+
+<!-- Bug 1 root cause -->
