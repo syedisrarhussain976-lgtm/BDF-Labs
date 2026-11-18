@@ -1,0 +1,40 @@
+### Lab 02: SQLite Database and CRUD Routes
+### Tested via VS Code REST Client
+
+### 1. GET All Books
+GET http://localhost:3000/books/
+Accept: application/json
+
+### 2. GET Book by ID (Existing: ID 1)
+GET http://localhost:3000/books/1/
+Accept: application/json
+
+### 3. GET Book by ID (Non-existent: ID 999 - Expect 404)
+GET http://localhost:3000/books/999/
+Accept: application/json
+
+### 4. POST Add a New Book
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+  "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+  "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+  "price": 750,
+  "pages": 395
+}
+
+### 5. PUT Update an Existing Book (Update ID 1)
+PUT http://localhost:3000/books/1/
+Content-Type: application/json
+
+{
+  "title": "Harry Potter and the Sorcerer's Stone (Special Illustrated Edition)",
+  "author": "J.K. Rowling",
+  "price": 520,
+  "pages": 350
+}
+
+### 6. DELETE a Book by ID (Delete ID 5)
+DELETE http://localhost:3000/books/5/
+Accept: application/json
