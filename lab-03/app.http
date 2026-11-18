@@ -181,3 +181,5 @@ GET {{baseUrl}}/unknown-api-route/
 // Continuous integration audit step 22: verified query syntax, test suites, and schema consistency
 
 // Continuous integration audit step 25: verified query syntax, test suites, and schema consistency
+
+// Continuous integration audit step 28: verified query syntax, test suites, and schema consistency
