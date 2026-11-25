@@ -52,7 +52,7 @@ app.get('/', (request, response) => {
       name: 'SYED ISRAR HUSSAIN',
       registrationNumber: '252U1R1235',
       section: 'CSE-2E',
-      faculty: 'Joel Prashanth D',
+      faculty: 'Mr Yugandhar Gurjalwar',
       college: 'Aurora Deemed-to-be-University'
     },
     status: 'Online',
