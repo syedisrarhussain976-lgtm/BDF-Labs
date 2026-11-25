@@ -27,7 +27,7 @@ Each laboratory resides within its own independent workspace directory (`lab-01`
 - **Curriculum:** Computer Science and Engineering
 - **Academic Context:** Year II, Term II
 - **Institution:** Aurora Higher Education Institution
-- **Course Faculty:** Joel Prashanth D
+- **Course Faculty:** Mr Yugandhar Gurjalwar
 - **Student Name:** SYED ISRAR HUSSAIN
 - **Registration Number:** 252U1R1235
 - **Section:** CSE-2E
@@ -396,7 +396,7 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 ---
 
 ## 18. Acknowledgements
-- **Joel Prashanth D** — Faculty, Backend Development Fundamentals, for curriculum guidance, assignment specifications, and technical standards.
+- **Mr Yugandhar Gurjalwar** — Faculty, Backend Development Fundamentals, for curriculum guidance, assignment specifications, and technical standards.
 - **Department of Computer Science and Engineering**, Aurora Higher Education Institution.
 - Node.js, Express.js, and SQLite open-source developer communities.
 
