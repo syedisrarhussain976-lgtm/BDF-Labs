@@ -212,7 +212,7 @@ BDF-Labs/
 | **01** | Introduction to Node.js & HTTP Server | Node.js, Express | Dynamic HTTP routing, plain text, formatted date JSON, HTML responses | [Lab 01 README](lab-01/README.md) | **Completed** |
 | **02** | SQLite Database & CRUD Routes | Express, SQLite, sqlite3 | Complete CRUD REST operations on `book` table, parameterized queries | [Lab 02 README](lab-02/README.md) | **Completed** |
 | **03** | REST API, Query Parameters, Validation, and Debugging | Express, SQLite, sqlite3, Postman | Dynamic SQL query parameters (`search_q`, `order_by`, `order`, pagination `limit`/`offset`, `min_price`/`max_price`), whitelisting, payload validation, 4-bug debugging suite, 21 Postman tests | [Lab 03 README](lab-03/README.md) · [🔗 Live Server](https://syed-israr-hussain-lab3.onrender.com) | **Completed** |
-| **04** | User Registration, Login & JWT | Express, bcrypt, JWT, SQLite | Salted password hashing (salt 10), duplicate user check, JWT token issuance | [Lab 04 README](lab-04/README.md) · [🔗 Live Server](https://syed-israr-hussain-lab4.onrender.com) | **Completed** |
+| **04** | User Registration, Login & JWT | Express, bcrypt, JWT, SQLite | Salted password hashing (salt 10), duplicate user check, JWT token issuance | [Lab 04 README](lab-04/README.md) · [🔗 Live Server](https://bdf-labs-app-lab-04.onrender.com) | **Completed** |
 | **05** | Auth Middleware & Protected Routes | Express, JWT, SQLite | Bearer token authorization middleware, 401 Unauthorized handling, protected CRUD | [Lab 05 README](lab-05/README.md) | **Completed** |
 | **06** | Relational Schemas & SQL Joins | Express, SQLite (FKs) | Author-book relational schema, `INNER JOIN`, `LEFT JOIN`, `GROUP BY` aggregations | [Lab 06 README](lab-06/README.md) | **Completed** |
 | **07** | Validation, Error Handling & Logging | Express Middleware | Input validation, 400 Bad Request handling, 4-argument centralized error boundary | [Lab 07 README](lab-07/README.md) | **Completed** |
@@ -422,7 +422,7 @@ This repository is submitted for academic coursework evaluation. Unless explicit
 
 <!-- Submission audit -->
 
-<!-- Lab 04 Verification: Fully implemented and deployed live at https://syed-israr-hussain-lab4.onrender.com -->
+<!-- Lab 04 Verification: Fully implemented and deployed live at https://bdf-labs-app-lab-04.onrender.com -->
 <!-- Lab 04 Security: bcrypt password hashing with 10 salt rounds and stateless JWT signing. -->
 <!-- Lab 04 Test Suite: Automated 9-scenario Postman collection and REST Client scripts. -->
 <!-- Student Attribution: All laboratory assignments authored by SYED ISRAR HUSSAIN (252U1R1235). -->
