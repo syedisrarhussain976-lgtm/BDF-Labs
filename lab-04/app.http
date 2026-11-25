@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:3000
-@renderUrl = https://syed-israr-hussain-lab4.onrender.com
+@renderUrl = https://bdf-labs-app-lab-04.onrender.com
 
 ### 1. Root API Status
 GET {{baseUrl}}/
